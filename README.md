@@ -158,5 +158,20 @@ cd AI-Data-Analyst
 
 - streamlit run app/app.py
 
+https://github.com/mdnoorainwakil/AI-Data-Analyst/blob/main/Screenshot%202026-09-12%20024106.png
+
+"C:\Users\Mohd Noorain\OneDrive\Pictures\Screenshots\Screenshot 2026-09-12 024201.png"
+
+"C:\Users\Mohd Noorain\OneDrive\Pictures\Screenshots\Screenshot 2026-09-12 024240.png"
+
+"C:\Users\Mohd Noorain\OneDrive\Pictures\Screenshots\Screenshot 2026-09-12 024255.png"
+
+"C:\Users\Mohd Noorain\OneDrive\Pictures\Screenshots\Screenshot 2026-09-12 024448.png"
+
+"C:\Users\Mohd Noorain\OneDrive\Pictures\Screenshots\Screenshot 2026-09-12 024515.png"
+
+"C:\Users\Mohd Noorain\OneDrive\Pictures\Screenshots\Screenshot 2026-09-12 024549.png"
+
+"C:\Users\Mohd Noorain\OneDrive\Pictures\Screenshots\Screenshot 2026-09-12 025706.png"
 
 
