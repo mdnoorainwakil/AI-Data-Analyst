@@ -1,281 +1,159 @@
-# AI Data Analyst
+# 🤖 AI Data Analyst
 
-An interactive AI-powered data analysis application that allows users to upload datasets, automatically clean and understand their data, explore insights, create visualizations, and ask questions about their dataset using natural language.
+An AI-powered data analysis application built with Python and Streamlit.
 
-## 🚀 Project Overview
+The application allows users to upload CSV or Excel datasets, automatically understand and clean the data, explore data quality, generate summaries and visualizations, and ask questions about the dataset using natural language.
 
-AI Data Analyst is a Streamlit-based web application designed to simplify the data analysis process.
+The goal of this project is to simplify the data analysis workflow by combining automated data cleaning, exploratory analysis, visualization, and AI-assisted insights in one interface.
 
-Instead of manually writing Python or SQL queries for every analysis, users can upload a CSV or Excel dataset and interact with the data through an easy-to-use interface.
+---
 
-The application automatically analyzes the uploaded dataset, identifies data types, performs data cleaning, provides dataset statistics, generates visualizations, and allows users to ask questions in natural language.
+## 📌 Overview
 
-The goal of this project is to make exploratory data analysis more accessible and reduce the amount of manual work required to understand a dataset.
+Traditional data analysis often requires multiple steps such as:
+
+- Loading the dataset
+- Understanding columns and data types
+- Cleaning missing and duplicate values
+- Performing exploratory data analysis
+- Creating visualizations
+- Writing queries for specific business questions
+- Interpreting the results
+
+This project brings these steps together into a single Streamlit application.
+
+Users can upload their own CSV or Excel dataset and interact with the data through an easy-to-use interface.
+
+The application automatically analyzes the structure of the uploaded dataset and adapts the analysis according to the available columns and data types.
+
+---
 
 ## ✨ Key Features
 
-### 1. Dataset Upload
+### 📂 Dataset Upload
+- Upload CSV and Excel (`.xlsx`) files.
+- Automatically reads the uploaded dataset.
 
-Users can upload datasets in supported formats such as:
+### 🧹 Automatic Data Cleaning
+- Handles missing values and duplicate records.
+- Detects numerical, categorical and date columns.
+- Cleans common formatting issues in numerical data.
+- Converts data into suitable formats for analysis.
 
-- CSV
-- Excel (.xlsx)
+### 🔍 Data Profiling
+- Displays total rows and columns.
+- Shows missing values and duplicate records.
+- Displays column names and data types.
+- Provides an overview of the uploaded dataset.
 
-After uploading a dataset, the application loads the data and displays its basic information.
+### 📊 Data Exploration
+- View dataset records and statistical summaries.
+- Explore numerical and categorical columns.
+- Filter and analyze the uploaded data.
 
-### 2. Automatic Data Understanding
+### 📈 Interactive Visualizations
+- Generate charts based on the uploaded dataset.
+- Explore trends, comparisons and distributions visually.
 
-The application automatically examines the dataset and identifies:
+### 🤖 AI Data Analyst
+- Ask questions about your dataset using natural language.
+- AI understands the question based on the actual dataset.
+- Generates an analysis plan and performs the required analysis.
+- Displays the result in an easy-to-understand format.
 
-- Number of rows
-- Number of columns
-- Column names
-- Data types
-- Numerical columns
-- Categorical columns
-- Date columns
-- Missing values
-- Duplicate records
+### 🗃️ SQL Analysis
+- Generates SQL queries for supported analytical questions.
+- Executes read-only queries on the uploaded dataset.
+- Displays the generated query and result.
 
-This helps the user understand the structure of the dataset quickly.
+### 💡 AI Insights
+- Converts analytical results into simple explanations.
+- Helps users understand important findings from their data.
 
-### 3. Automatic Data Cleaning
+### 🕘 Question History
+- Keeps track of recent questions asked during the session.
+- Allows users to review previous analysis results.
 
-The application performs data-cleaning operations based on the characteristics of the uploaded dataset.
+## 🔄 How It Works
 
-Examples include:
-
-- Handling missing values
-- Removing duplicate records
-- Detecting numerical columns
-- Detecting categorical/string columns
-- Detecting date columns
-- Converting numeric values stored as text
-- Cleaning currency symbols and unnecessary characters
-- Handling inconsistent data formats
-- Converting columns to appropriate data types where possible
-
-For example, a value such as:
-
-`$68.84`
-
-can be recognized as a numerical value instead of being treated as a normal string.
-
-Similarly, numeric values stored with commas, currency symbols, or other formatting can be processed before analysis.
-
-### 4. Dataset Summary
-
-The application provides an overview of the uploaded dataset including:
-
-- Total records
-- Total columns
-- Missing values
-- Duplicate records
-- Data types
-- Numerical and categorical features
-
-### 5. Data Exploration
-
-Users can explore the uploaded dataset through tables and statistical summaries.
-
-For numerical columns, the application can provide useful statistics such as:
-
-- Mean
-- Median
-- Minimum
-- Maximum
-- Standard deviation
-- Count
-
-### 6. Data Visualization
-
-The application can generate visualizations based on the available columns and the user's analysis requirements.
-
-Possible visualizations include:
-
-- Bar charts
-- Line charts
-- Histograms
-- Scatter plots
-- Pie charts
-- Distribution charts
-- Category-wise comparisons
-
-The application attempts to select suitable columns for visualization based on their data types.
-
-### 7. Natural Language Data Questions
-
-Users can ask questions about their dataset using normal language.
-
-For example:
-
-- How many rows are in this dataset?
-- What is the average sales?
-- Which city has the highest revenue?
-- Show me the total revenue by city.
-- Which product is sold the most?
-- What is the maximum value of sales?
-- Show the monthly trend.
-- Which category has the highest quantity?
-
-The application converts supported questions into an analysis plan and executes the corresponding query on the dataset.
-
-### 8. SQL-Based Analysis
-
-For supported analytical questions, the application generates SQL queries to perform operations such as:
-
-- COUNT
-- SUM
-- AVG
-- MIN
-- MAX
-- GROUP BY
-- Filtering
-- Sorting
-- Aggregation
-
-The generated SQL is displayed to the user for transparency.
-
-### 9. Analysis Plan
-
-Before executing a supported question, the application shows an analysis plan describing:
-
-- Operation
-- Grouping column
-- Metric
-- Aggregation
-- Filters
-- Sorting
-- Limit
-
-This helps users understand how their question is being interpreted.
-
-### 10. Query Results
-
-After analysis, the application displays the result in an easy-to-read table.
-
-This allows users to directly understand the answer without manually writing queries.
-
-### 11. Question History
-
-The application keeps track of previously asked questions during the current session.
-
-Users can review:
-
-- Previous questions
-- Generated answers
-
-This makes it easier to continue the analysis workflow.
-
-## 🧠 How It Works
-
-The general workflow of the application is:
+The application follows a simple data analysis workflow:
 
 ```text
 Upload Dataset
       ↓
-Read Dataset
-      ↓
-Understand Data Structure
+Read & Understand Data
       ↓
 Detect Data Types
       ↓
-Clean Data
+Clean the Dataset
       ↓
-Generate Dataset Summary
+Explore Data & Generate KPIs
       ↓
-User Asks a Question
+Create Visualizations
       ↓
-Interpret the Question
+Ask Questions in Natural Language
       ↓
-Generate Analysis Plan
+AI Generates Analysis Plan
       ↓
-Generate SQL / Analysis Operation
+Generate & Execute SQL
       ↓
-Execute Analysis
-      ↓
-Display Result
+Display Results & AI Insights
 
+## 🛠️ Tech Stack
 
----
-
-## 🛠️ Technical Stack
-
-### Programming Language
+### 💻 Programming Language
 - Python
 
-### Frontend / Application Framework
+### 🌐 Framework
 - Streamlit
 
-### Data Processing
+### 📊 Data Analysis & Processing
 - Pandas
 - NumPy
 
-### Data Visualization
+### 📈 Data Visualization
 - Plotly
 - Matplotlib
 
-### Database / Query Engine
+### 🗄️ Database & Querying
 - SQLite
+- SQL
 
-### AI Integration
+### 🤖 AI Integration
 - Groq API
-- Natural Language Question Understanding
-- AI-generated SQL Analysis
 
-### Configuration & Security
+### ⚙️ Configuration
 - python-dotenv
-- Environment Variables
-- `.env` file for API credentials
 
-### File Formats Supported
-- CSV
-- XLSX / Excel
-
-### Development Tools
-- Visual Studio Code
+### 🧰 Development Tools
+- VS Code
 - Git
 - GitHub
 
+## ⚙️ Installation & Run
 
----
-
-## 📁 Project Structure
-
-```text
-AI-Data-Analyst/
-│
-├── app/
-│   └── app.py
-│
-├── .streamlit/
-│   └── config.toml
-│
-├── .env
-│
-├── .gitignore
-│
-└── README.md
-
-<img width="653" height="345" alt="image" src="https://github.com/user-attachments/assets/9447541f-0d68-4511-9ce3-ac9dd0c0cb4a" />
-
-
-
-###  ⚙️ Installation & Run
-
-1. Clone the repository.
-
-2. Install the required libraries:
+### 1. Clone the Repository
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/mdnoorainwakil/AI-Data-Analyst.git
+cd AI-Data-Analyst
 
-## Run the application:
-streamlit run app/app.py
+## Create a Virtual Environment
 
+- python -m venv venv
 
-## 👨‍💻 Author
+## Activate the Virtual Environment
 
-Md Noorain Wakil
+- venv\Scripts\activate
 
-B.Tech CSE (Data Science)
+## Install Dependencies
+
+- pip install -r requirements.txt
+
+## Configure API Key
+
+- GROQ_API_KEY=your_api_key_here
+
+## Run the Application
+
+- streamlit run app/app.py
