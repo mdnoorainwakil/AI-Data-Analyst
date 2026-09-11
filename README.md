@@ -157,3 +157,18 @@ cd AI-Data-Analyst
 ## Run the Application
 
 - streamlit run app/app.py
+
+
+<img width="1917" height="1036" alt="Screenshot 2026-09-12 024549" src="https://github.com/user-attachments/assets/b072d24b-6072-4f1c-9a70-b9f75527c6bd" />
+
+<img width="1916" height="996" alt="Screenshot 2026-09-12 024515" src="https://github.com/user-attachments/assets/e9dbfc54-cd46-496e-a897-d3a6b4c3fbf3" />
+
+<img width="1917" height="972" alt="Screenshot 2026-09-12 024448" src="https://github.com/user-attachments/assets/93ab393f-539d-4a24-94c2-03942cfd64e6" />
+
+<img width="1915" height="1025" alt="Screenshot 2026-09-12 024255" src="https://github.com/user-attachments/assets/e682fa43-406f-4d9d-9734-70a6f748ba23" />
+
+<img width="1917" height="1032" alt="Screenshot 2026-09-12 024240" src="https://github.com/user-attachments/assets/fcaa4cd0-f038-498e-b8cf-497af4ad34c7" />
+
+<img width="1866" height="977" alt="Screenshot 2026-09-12 024201" src="https://github.com/user-attachments/assets/60551b0b-ce6a-407d-a0ee-dabf4c6cd8f3" />
+
+<img width="1917" height="1096" alt="Screenshot 2026-09-12 024106" src="https://github.com/user-attachments/assets/3ed0df8e-5f44-4279-b596-af3a917dee9d" />
